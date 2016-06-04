@@ -12,25 +12,63 @@ include ./mixin.pug
 
 block slides
   section
-    h1 Sample Lecture
-    p
-      .small Created by LeoMao
-
-  section
-    +mdslide.
-      ## Outline
-      - One
-      - Two
-      - Three
-
-    +slide(data-markdown=true).
-      ## Something More?
-      - Four
-      - Five
-      - Six
+    h1 Lazer Projector
 
   section
     +slide
-      h2 First of All
-      p.
-        $$\int f(x)\, dx$$
+      h2 Principle of Lazer Projector
+
+    +slide
+      h3 Video
+      iframe(width="600" height="480" data-autoplay
+        src="https://www.youtube.com/embed/Dx6HQ6KuvfU" frameborder="0" allowfullscreen)
+
+    +slide
+      h3 Basic Principle
+      img(width="30%" src="img/lazer1.jpg")
+      p Control the lazer beam to "draw" images.
+
+    +slide
+      h3 Structure
+      img(width="50%" src="img/lazer_struct.gif")
+
+    +slide
+      h3 Structure
+      img(width="60%" src="img/lazer_struct2.jpg")
+
+    +slide
+      h3 Galvo Motor
+      p Motor with mirror to controller the deflection of laser beams.
+      p Need 2 Galvo for a 2D image.
+
+    +slide
+      h3 Galvo Motor
+      img(width="60%" src="img/galvo1.jpg")
+
+    +slide
+      h3 Galvo Motor
+      img(width="60%" src="img/galvo2.jpg")
+
+    +slide
+      h3 Galvo Motor
+      ul
+        li Need to be fast and precise.
+        li Typically 10kpps.
+        li The faster the galvo, the smoother the projected image.
+
+    +slide
+      h3 Track planning
+      img(width="80%" src="img/track.png")
+
+    +slide
+      img(width="80%" src="img/linux.jpg")
+
+    +slide
+      h3 Architecture
+      img(width="80%" src="img/lazer_arch.jpg")
+
+    +slide
+      h3 Architecture
+      img(width="80%" src="img/lazer_arch2.png")
+
+
