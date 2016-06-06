@@ -71,4 +71,148 @@ block slides
       h3 Architecture
       img(width="80%" src="img/lazer_arch2.png")
 
+  section
+    +slide 
+      h2 Lazer Projector Module
+      img(width="70%" src="img/module.jpg")
+
+    +slide
+      h3 Block Diagram
+      img(width="35%" src="img/b1.jpg")
+
+    +slide
+      h3 MEMS drive ASIC
+      div.inline-block(style="width: 40%")
+        img(width="80%" src="img/b2.jpg")
+      div.inline-block(style="width: 50%")
+        ul
+          li Uses feedback from sensors on the MEMS scanner to 
+            keep the system on resonance and at fixed scan amplitude.
+          li The image is drawn in both direction.
+
+    +slide
+      h3 MEMS drive ASIC
+      div.inline-block(style="width: 40%")
+        img(width="80%" src="img/b3.jpg")
+      div.inline-block(style="width: 50%")
+        ul
+          li VPS engine effectively maps the input pixels onto a high resolution.
+          li Mapping from digital coding to laser drive is performed by the ALD.
+
+    +slide
+      h3 MEMS drive ASIC
+      div.inline-block(style="width: 40%")
+        img(width="80%" src="img/b4.jpg")
+      div.inline-block(style="width: 50%")
+        ul
+          li Biaxial MEMS scanner
+
+  section
+    +slide
+      h3 How to make smaller projector?
+      h2 Make components smaller.
+
+    +slide
+      h3 Fresnel lens
+      img(width="30%" src="img/mir1.jpg")
+
+    +slide
+      h3 Fresnel lens
+      img(width="35%" src="img/mir2.jpg")
+
+    +slide
+      h3 Smaller lazer diode
+      img(width="60%" src="img/dio1.jpg")
+
+    +slide
+      img(width="70%" src="img/struct.jpg")
+
+  section
+    +slide
+      h2 Promotion & Competitors
+
+    +slide
+      h3 Features
+      ul
+        li 攝相鏡頭偵測外部環境
+        li 根據接收影像調整不同區域亮度(非平面or單色投影幕時)
+        li 自動/手動調整整體亮度(室內光線存在時也能使用)
+        li 雷射光源:降低熱能產生
+        li 要有內建電源才有便攜之意義
+        li 能無線連結裝置
+
+    +slide
+      h3 Sony MP-CL1 無線微型投影機(2015)
+      div.inline-block(style="width: 50%")
+        ul
+          li 無線(Miracast 鏡射功能)連接電腦、手機
+          li HDMI/MHL
+          li 內建電池 2hr，可當行動電源
+          li 自動對焦(弧面亦可投影)
+          li 耳機孔輸出
+      div.inline-block(style="width: 40%")
+        img(width="100%" src="img/sony1.jpg")
+
+    +slide
+      img(width="70%" src="img/sony2.jpg")
+
+    +slide
+      h3 benQ 純雷射節能投影機LX60ST(2012)
+      iframe(width="600" height="480" data-autoplay
+        src="https://www.youtube.com/embed/wZ5E96jd5p4" frameborder="0" allowfullscreen)
+
+    +slide
+      h3 benQ 純雷射節能投影機LX60ST(2012)
+      div.inline-block(style="width: 50%; vertical-align: middle;")
+        ul
+          li 商務及大型展演空間
+          li 光源: 20,000 小時(8hr/day, 5day/week: 約10年)
+          li 90% 省電模式
+          li 80,000:1 的超高對比
+          li 任意角度投影
+      div.inline-block(style="width: 40%; vertical-align: middle;")
+        img(width="100%" src="img/benq1.jpg")
+
+      div.float-center.fragment.fade-in
+        div.fragment.fade-out
+          img(width="60%" src="img/time.jpg")
+
+    +slide
+      h3 Casio XJ-A140(2010)
+      div.inline-block(style="width: 50%; vertical-align: middle;")
+        ul
+          li 雷射 & LED 混合(20000 小時)
+          li 8 秒開機時間
+          li 色域更廣
+          li 四種模式:標準、圖形、劇場、黑板
+          li 2 倍光學廣角鏡頭
+          li 畫面歪斜自動校正
+      div.inline-block(style="width: 40%; vertical-align: middle;")
+        img(width="100%" src="img/casio0.jpg")
+
+      div.float-center.fragment.fade-in
+        div.fragment.fade-out
+          img(width="60%" src="img/casio1.jpg")
+
+      div.float-center.fragment.fade-in
+        div.fragment.fade-out
+          img(width="80%" src="img/casio2.jpg")
+
+      div.float-center.fragment.fade-in
+        div.fragment.fade-out
+          img(width="40%" src="img/casio3.jpg")
+
+    +slide
+      h3 Reference
+      ul
+        li 
+          a(href="http://www.techbang.com/posts/40192-pico-projector-wireless-has-begun-sony-mp-cl1-laser-projector-light-stage")
+            | http://www.techbang.com/posts/40192-pico-projector-wireless-has-begun-sony-mp-cl1-laser-projector-light-stage
+        li
+          a(href="http://www.benq.com.tw/news/1347465600_0_350.html")
+            | http://www.benq.com.tw/news/1347465600_0_350.html
+        li
+          a(href="http://www.casio.com.tw/pj/product_1.php?TRE_ID=1500")
+            | http://www.casio.com.tw/pj/product_1.php?TRE_ID=1500
+
 
