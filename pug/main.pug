@@ -13,6 +13,7 @@ include ./mixin.pug
 block slides
   section
     h1 Lazer Projector
+    p 江誠敏、陳奕慈、林郁翰、王志新
 
   section
     +slide
@@ -28,9 +29,19 @@ block slides
       img(width="30%" src="img/lazer1.jpg")
       p Control the lazer beam to "draw" images.
 
+      +notes.
+        最基本的想法就是控置雷射光出去的位置、畫出圖形
+
     +slide
       h3 Structure
       img(width="50%" src="img/lazer_struct.gif")
+      +notes
+        p 有三個地方要注意
+        ul
+          li 雷射源
+          li Colour Control 如果要多色
+          li Scanning System 如果沒有只是雷射筆
+        p 中間只是效果器
 
     +slide
       h3 Structure
@@ -39,6 +50,9 @@ block slides
     +slide
       h3 Laser
       img(width="60%" src="img/laser.jpg")
+      +notes.
+        因為要經過多次反射，需高能。另外要注意人對不同波長
+        反應不同。
 
     +slide
       h3 Galvo Motor
@@ -66,6 +80,9 @@ block slides
 
     +slide
       img(width="80%" src="img/linux.jpg")
+      +notes.
+        再快一點，解析度就可以更好。但有問題要解決 ->
+        pixel 黏在一起 -> blanking
 
     +slide
       h3 Full pixel scanning
